@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow/interfaces/structural_request.schema.json",
+  "title": "ARGUS aerodynamic-to-structural request",
+  "type": "object",
+  "required": ["schema_version", "design", "operating_point", "geometry", "aerodynamics"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "design": {
+      "type": "object",
+      "required": ["case_id", "concept", "variables"],
+      "properties": {
+        "case_id": {"type": "string"},
+        "concept": {"type": "string"},
+        "variables": {"type": "object", "additionalProperties": {"type": "number"}},
+        "metadata": {"type": "object"}
+      }
+    },
+    "operating_point": {"type": "object"},
+    "geometry": {
+      "type": "object",
+      "required": ["case_id", "geometry_path", "length_unit", "design_variables"]
+    },
+    "aerodynamics": {
+      "type": "object",
+      "required": ["case_id", "operating_point", "geometry_path", "cl", "cdiw", "half_wing_root_bending_n_m"]
+    },
+    "requested_outputs": {"type": "array", "items": {"type": "string"}}
+  }
+}

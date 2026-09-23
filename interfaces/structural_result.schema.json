@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow/interfaces/structural_result.schema.json",
+  "title": "ARGUS structural-to-optimizer result",
+  "type": "object",
+  "required": ["schema_version", "case_id", "operating_point", "feasible", "metrics", "constraints"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "case_id": {"type": "string"},
+    "operating_point": {"type": "string"},
+    "feasible": {"type": "boolean"},
+    "metrics": {"type": "object", "additionalProperties": {"type": "number"}},
+    "constraints": {
+      "description": "Normalized constraints using g(x) <= 0 as feasible.",
+      "type": "object",
+      "additionalProperties": {"type": "number"}
+    },
+    "files": {"type": "object", "additionalProperties": {"type": "string"}},
+    "metadata": {"type": "object"}
+  }
+}

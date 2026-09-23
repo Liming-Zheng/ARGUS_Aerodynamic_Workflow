@@ -10,6 +10,7 @@ Thumbs.db
 
 # Generated solver output
 **/outputs/
+examples/**/demo_output/
 **/*.adb
 **/*.key
 **/*.tri

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "design": {
+    "case_id": "interface_demo_te",
+    "concept": "trailing_edge",
+    "variables": {
+      "A1_over_c": 0.01,
+      "A2_over_c": 0.015,
+      "A3_over_c": 0.012,
+      "A4_over_c": 0.008,
+      "A5_over_c": 0.0
+    },
+    "metadata": {
+      "warning": "interface demonstration, not an engineering case"
+    }
+  },
+  "operating_point": {
+    "name": "mach01_fixed_cl",
+    "mach": 0.1,
+    "target_cl": 0.428277635108,
+    "target_lift_n": null,
+    "altitude_m": null,
+    "density_kg_m3": null,
+    "velocity_m_s": null,
+    "reference_area_m2": null
+  },
+  "geometry": {
+    "case_id": "interface_demo_te",
+    "geometry_path": "results/geometries/low_speed/cfft_b02_c01.vsp3",
+    "length_unit": "m",
+    "design_variables": {
+      "A1_over_c": 0.01,
+      "A2_over_c": 0.015,
+      "A3_over_c": 0.012,
+      "A4_over_c": 0.008,
+      "A5_over_c": 0.0
+    },
+    "metadata": {}
+  },
+  "aerodynamics": {
+    "case_id": "interface_demo_te",
+    "operating_point": "mach01_fixed_cl",
+    "geometry_path": "results/geometries/low_speed/cfft_b02_c01.vsp3",
+    "cl": 0.428277235372,
+    "cdiw": 0.005571172322,
+    "half_wing_root_bending_n_m": 114.9125604784,
+    "spanwise_loads_path": null,
+    "metrics": {},
+    "metadata": {
+      "warning": "values demonstrate the interface only"
+    }
+  },
+  "requested_outputs": [
+    "mass_kg",
+    "max_stress_pa",
+    "max_strain",
+    "actuator_force_n",
+    "actuator_stroke_m"
+  ]
+}
