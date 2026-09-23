@@ -46,9 +46,17 @@ Python 编排层使用相对路径、`pathlib` 和参数列表，CI 会在 Windo
 和 macOS 上测试。OpenVSP/VSPAERO 在新系统上仍需单独安装，并先复现仓库中
 的 baseline，确认科学结果一致后再开展新优化。
 
+本仓库是在 TU Delft 开展 ARGUS 项目工作期间形成的公开科研软件仓库。
+仓库原创代码和文档使用 BSD-3-Clause 许可证；NASA 来源资料、OpenVSP、
+几何、标识和其他第三方内容不因此被重新授权，具体范围见
+[NOTICE.md](NOTICE.md)。
+
 项目地址：
 [Liming-Zheng/ARGUS_Aerodynamic_Workflow](https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow)
-（交接时为 private repository，需要仓库所有者邀请）。
+。任何人都可以通过 HTTPS 读取和 clone；有写权限的协作者可以配置 GitHub
+SSH key 后使用 SSH 地址 push。SSH 是身份认证方式，并不是读取公开仓库的
+必要条件。外部贡献者建议 fork 后提交 pull request，直接写权限仍由仓库
+所有者控制。
 
 安装和运行步骤以英文 [`README.md`](README.md) 为准。
 

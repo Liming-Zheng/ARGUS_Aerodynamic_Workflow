@@ -9,12 +9,22 @@ macOS. Numerical equivalence of OpenVSP/VSPAERO must be verified locally.
 - OpenVSP 3.50.1 where available, including VSPAERO and Python bindings
 - Git
 
-Clone the private repository after accepting the GitHub invitation:
+Clone the public repository over HTTPS:
 
 ```bash
 git clone https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow.git
 cd ARGUS_Aerodynamic_Workflow
 ```
+
+Contributors with write access may use SSH after adding an SSH key to their
+GitHub account:
+
+```bash
+git clone git@github.com:Liming-Zheng/ARGUS_Aerodynamic_Workflow.git
+```
+
+SSH is needed for authenticated Git operations only; public read access does
+not require an invitation or GitHub account.
 
 ## Windows PowerShell
 

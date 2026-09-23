@@ -1,5 +1,12 @@
 # Contributing
 
+This is a public repository developed within the ARGUS research project.
+External contributors should fork the repository and submit a pull request.
+Project members who need direct push access must be added by the repository
+owner and may authenticate with a GitHub SSH key. By contributing, you confirm
+that you have the right to submit the work under the repository's
+BSD-3-Clause license.
+
 ## Development rules
 
 1. Work on a branch and keep changes scoped to one study where possible.
@@ -25,4 +32,3 @@ python tools/validate_repository.py
 
 For changes that invoke OpenVSP, also run one geometry-only dry run and one
 fixed-lift VSPAERO case.
-

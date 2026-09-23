@@ -13,6 +13,8 @@ def main() -> int:
     failures: list[str] = []
 
     required = [
+        repo / "LICENSE",
+        repo / "NOTICE.md",
         repo / "README.md",
         repo / "docs" / "CROSS_PLATFORM_SETUP.md",
         repo / "docs" / "STRUCTURAL_COUPLING.md",

@@ -5,6 +5,12 @@ workflows developed for the ARGUS outer-wing morphing study at TU Delft. The
 repository is also the maintained starting point for subsequent aerodynamic,
 structural, actuator, and multidisciplinary optimization work.
 
+This public repository was produced within the **ARGUS research project**.
+Original software and documentation are available under the
+[BSD 3-Clause License](LICENSE); third-party software, NASA-derived material,
+geometry, and branding retain their own terms. See
+[NOTICE.md](NOTICE.md) for provenance and license scope.
+
 This repository is the **curated project handover**, not a dump of every solver
 run. It contains the maintained Python source, configuration templates, audited
 summary tables, representative OpenVSP geometries, and enough documentation for
@@ -238,13 +244,16 @@ The complete correction history is in
 - Fuel-in-wing relief, actuator mass/energy, skin strain, failure modes, and
   control-system dynamics are outside this aerodynamic repository.
 
-## Data and redistribution
+## License, data, and redistribution
 
 NASA source material, OpenVSP, and collaborator RANS packages have their own
 terms and provenance. This repository includes only the geometry and derived
-artifacts selected for project handover. Before making a public GitHub repository,
-complete [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md) and choose a
-license with the project owner. No license is intentionally asserted here.
+artifacts selected for project handover. Original repository software and
+documentation are released under BSD-3-Clause. This license does not relicense
+NASA-derived geometry, OpenVSP/VSPAERO, collaborator material, institutional
+branding, or other third-party assets. See [NOTICE.md](NOTICE.md) and complete
+[docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md) before publishing a
+tagged release.
 
 ## Continuing the project
 
@@ -262,7 +271,21 @@ license with the project owner. No license is intentionally asserted here.
 
 The canonical repository is
 [Liming-Zheng/ARGUS_Aerodynamic_Workflow](https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow).
-It is private at handover; access is granted by the project owner.
+It is public and can be cloned read-only over HTTPS:
+
+~~~bash
+git clone https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow.git
+~~~
+
+Contributors with GitHub write access may instead use SSH:
+
+~~~bash
+git clone git@github.com:Liming-Zheng/ARGUS_Aerodynamic_Workflow.git
+~~~
+
+SSH authenticates pushes; it is not required to read the public repository.
+External contributors should normally fork the repository and open a pull
+request. Direct write access remains controlled by the repository owner.
 
 ## Citation and contact
 

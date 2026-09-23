@@ -11,6 +11,8 @@
   matrix for the Python orchestration layer.
 - Added multidisciplinary extension documentation and a coupled-workflow
   architecture figure for project handover.
+- Published the repository under BSD-3-Clause with explicit ARGUS project
+  provenance, third-party scope, and public contribution guidance.
 
 ## 1.0.0-handover - 2026-09-23
 
