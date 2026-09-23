@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Generated solver output
+**/outputs/
+**/*.adb
+**/*.key
+**/*.tri
+**/*.tkey
+**/*.log
+
+# Local runtime files generated from committed templates
+.argus_runtime.json
+**/config/*.json
+!**/config/*.template.json

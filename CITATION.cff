@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "ARGUS Aerodynamic Morphing-Wing Workflow"
+version: 1.0.0
+date-released: 2026-09-23
+type: software
+authors:
+  - family-names: Zheng
+    given-names: Liming
+affiliation: Delft University of Technology
+abstract: >-
+  OpenVSP/VSPAERO workflows for parametric geometry generation, fixed-lift
+  aerodynamic evaluation, and constrained comparison of conventional hinged,
+  continuous trailing-edge, and distributed-twist outer-wing concepts.
+keywords:
+  - morphing wing
+  - OpenVSP
+  - VSPAERO
+  - aerodynamic optimization
