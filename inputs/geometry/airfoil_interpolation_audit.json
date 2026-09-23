@@ -1,0 +1,18 @@
+{
+  "source_model": "D:\\ARGUS\\ARDUS_V2\\codex_work\\argus_morphing\\outputs\\baseline\\baseline_wing_only.vsp3",
+  "candidate_source_design": "mcv2_i002_c01",
+  "method": "Only SplitWingXSec-inserted profiles are linearly blended between original bracketing airfoils on a cosine x/c grid.",
+  "point_count_per_surface": 161,
+  "split_count": 10,
+  "original_section_count": 9,
+  "corrected_section_count": 19,
+  "maximum_inserted_profile_coordinate_error": 3.705003318033029e-12,
+  "geometry_differences_excluding_section_count": {
+    "span_native_ft": 0.0,
+    "area_native_ft2": 1.7763568394002505e-15,
+    "mac_native_ft": 5.208972293502256e-07,
+    "aspect_ratio": -1.7763568394002505e-15
+  },
+  "baseline_and_candidate_share_corrected_base": true
+}
+

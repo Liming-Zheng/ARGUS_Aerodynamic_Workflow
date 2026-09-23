@@ -1,0 +1,12 @@
+regime,flight_state,concept,case_id,geometry_file,selection_status
+cruise,early_cruise,rigid,rigid_baseline,geometries/cruise/rigid_baseline.vsp3,audited
+cruise,early_cruise,conventional_hinged,conv_g02_c06,geometries/cruise/conv_g02_c06.vsp3,audited
+cruise,early_cruise,trailing_edge,trailing_edge_seed_r02,geometries/cruise/trailing_edge_seed_r02.vsp3,audited
+cruise,early_cruise,twist,ff_tw_b02_c01_early_min_cdiw,geometries/cruise/ff_tw_b02_c01_early_min_cdiw.vsp3,audited
+cruise,late_cruise,conventional_hinged,conv_g01_c19,geometries/cruise/conv_g01_c19.vsp3,audited
+cruise,late_cruise,trailing_edge,ff_te_b01_c03_late_min_cdiw,geometries/cruise/ff_te_b01_c03_late_min_cdiw.vsp3,audited
+cruise,late_cruise,twist,ff_tw_b01_c03_late_min_cdiw,geometries/cruise/ff_tw_b01_c03_late_min_cdiw.vsp3,audited
+low_speed,fixed_CL,rigid,baseline_corrected,geometries/low_speed/baseline_corrected.vsp3,audited
+low_speed,fixed_CL,conventional_hinged,chc_g02_c06,geometries/low_speed/chc_g02_c06.vsp3,audited
+low_speed,fixed_CL,trailing_edge,cfft_b02_c01,geometries/low_speed/cfft_b02_c01.vsp3,audited
+low_speed,fixed_CL,twist,cffw_b01_c01,geometries/low_speed/cffw_b01_c01.vsp3,audited
