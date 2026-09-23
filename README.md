@@ -1,7 +1,9 @@
 # ARGUS Aerodynamic Morphing-Wing Workflow
 
 OpenVSP/VSPAERO geometry-generation, aerodynamic-evaluation, and optimization
-workflows developed for the ARGUS outer-wing morphing study at TU Delft.
+workflows developed for the ARGUS outer-wing morphing study at TU Delft. The
+repository is also the maintained starting point for subsequent aerodynamic,
+structural, actuator, and multidisciplinary optimization work.
 
 This repository is the **curated project handover**, not a dump of every solver
 run. It contains the maintained Python source, configuration templates, audited
@@ -57,7 +59,10 @@ interpretation.
 
 ```text
 .
-|-- docs/                         Handover, methods, corrections, and data definitions
+|-- src/argus_workflow/           Stable cross-disciplinary Python interface
+|-- interfaces/                   Versioned structural request/result schemas
+|-- examples/                     Runnable coupling and optimizer examples
+|-- docs/                         Handover, methods, corrections, and extension guides
 |-- inputs/geometry/              NASA source model and corrected common baseline
 |-- studies/
 |   |-- argus_morphing/           Continuous aft-camber geometry and optimization
@@ -75,6 +80,29 @@ The recommended entry point for current work is
 `studies/argus_corrected_cruise_comparison`. The three geometry generators remain in
 their concept-specific study folders.
 
+## Extension architecture
+
+![Multidisciplinary interface](docs/images/coupled_workflow.png)
+
+The historical study scripts remain available for full traceability. New work
+should use the small typed package in `src/argus_workflow` as the stable
+boundary between disciplines:
+
+- a geometry generator receives named design variables and creates an explicit
+  geometry artifact;
+- an aerodynamic evaluator returns `CDiw`, lift, root bending, spanwise-load
+  paths, and additional metrics;
+- an optional structural evaluator receives a versioned JSON request and
+  returns mass, strain, force, stroke, energy, feasibility, and normalized
+  constraints; and
+- any optimizer consumes the resulting objective and `g(x) <= 0` constraints.
+
+This lets a structural model be attached as an external command without
+editing VSPAERO scripts, and lets a new optimization algorithm reuse the same
+geometry and solver definitions. See
+[docs/STRUCTURAL_COUPLING.md](docs/STRUCTURAL_COUPLING.md) and
+[docs/EXTENDING_OPTIMIZATION.md](docs/EXTENDING_OPTIMIZATION.md).
+
 ## Quick start
 
 ### 1. Install external software
@@ -88,12 +116,31 @@ OpenVSP itself is not redistributed in this repository.
 
 ### 2. Create the analysis environment
 
+Windows PowerShell:
+
 ```powershell
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -m pip install -e .
 ```
+
+Ubuntu/macOS:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install -e .
+```
+
+Detailed OS-specific OpenVSP guidance is in
+[docs/CROSS_PLATFORM_SETUP.md](docs/CROSS_PLATFORM_SETUP.md). The Python
+orchestration and interfaces are covered by CI on Windows, Ubuntu, and macOS;
+scientific solver equivalence on a new platform must still be established by
+reproducing the supplied baseline.
 
 ### 3. Generate machine-local configurations
 
@@ -108,7 +155,8 @@ python tools/configure_runtime.py `
 ```
 
 Run `python tools/check_environment.py` afterwards. On Linux, supply the
-corresponding OpenVSP and Python paths.
+corresponding OpenVSP and Python paths. The macOS process is documented in the
+cross-platform guide.
 
 ### 4. Run tests before solver jobs
 
@@ -116,7 +164,15 @@ corresponding OpenVSP and Python paths.
 python -m pytest studies/argus_morphing/tests
 python -m pytest studies/argus_twist_morphing/tests
 python -m pytest studies/argus_corrected_cruise_comparison/tests
+python -m pytest tests
 python tools/validate_repository.py
+```
+
+The solver-independent handover examples should also run on every platform:
+
+```bash
+python examples/structural_coupling/run_demo.py
+python examples/custom_optimizer/random_search_demo.py
 ```
 
 ### 5. Reproduce or extend a study
@@ -189,6 +245,24 @@ terms and provenance. This repository includes only the geometry and derived
 artifacts selected for project handover. Before making a public GitHub repository,
 complete [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md) and choose a
 license with the project owner. No license is intentionally asserted here.
+
+## Continuing the project
+
+- **Structural integration:** implement the request/result contract in
+  `interfaces/` and follow the staged checks in
+  [docs/STRUCTURAL_COUPLING.md](docs/STRUCTURAL_COUPLING.md).
+- **Alternative optimization:** retain the evaluation contract and replace the
+  search loop as described in
+  [docs/EXTENDING_OPTIMIZATION.md](docs/EXTENDING_OPTIMIZATION.md).
+- **New morphing concept:** implement the `GeometryGenerator` protocol, first
+  reproduce the rigid baseline, then add one verified exact case before a
+  design of experiments.
+- **Contribution:** create a branch, keep generated solver files out of Git,
+  add tests for contract changes, and follow [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+The canonical repository is
+[Liming-Zheng/ARGUS_Aerodynamic_Workflow](https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow).
+It is private at handover; access is granted by the project owner.
 
 ## Citation and contact
 

@@ -12,6 +12,9 @@ OpenVSP/VSPAERO 建模、计算、优化与审计代码，以及经过最终核�
 3. 最终结果与局限 [`docs/RESULTS_AND_LIMITATIONS.md`](docs/RESULTS_AND_LIMITATIONS.md)
 4. 审计与错误修正 [`docs/AUDIT_AND_CORRECTIONS.md`](docs/AUDIT_AND_CORRECTIONS.md)
 5. 接手者运行手册 [`docs/HANDOVER.md`](docs/HANDOVER.md)
+6. Windows/Ubuntu/macOS 配置 [`docs/CROSS_PLATFORM_SETUP.md`](docs/CROSS_PLATFORM_SETUP.md)
+7. 结构耦合接口 [`docs/STRUCTURAL_COUPLING.md`](docs/STRUCTURAL_COUPLING.md)
+8. 更换优化算法 [`docs/EXTENDING_OPTIMIZATION.md`](docs/EXTENDING_OPTIMIZATION.md)
 
 ## 最重要的结论
 
@@ -30,6 +33,22 @@ OpenVSP/VSPAERO 建模、计算、优化与审计代码，以及经过最终核�
 - `Mach 0.10` 的低速结果不能直接作为巡航执行器载荷。
 - 发布到公开 GitHub 前，必须确认 NASA 几何、合作方数据和图片的再发布权限，
   并由项目负责人选择许可证。
+
+## 后续人员如何继续
+
+仓库新增了 `src/argus_workflow` 顶层接口，把几何生成、气动计算、结构/执行器
+计算和优化算法分开。Marco 的结构程序可以通过 `interfaces/` 中的 JSON
+请求/结果格式接入；Alexander 或其他研究者可以保留同一套精确分析流程，
+只替换搜索算法或目标函数。`examples/structural_coupling` 和
+`examples/custom_optimizer` 都可以在没有 OpenVSP 的情况下先验证接口。
+
+Python 编排层使用相对路径、`pathlib` 和参数列表，CI 会在 Windows、Ubuntu
+和 macOS 上测试。OpenVSP/VSPAERO 在新系统上仍需单独安装，并先复现仓库中
+的 baseline，确认科学结果一致后再开展新优化。
+
+项目地址：
+[Liming-Zheng/ARGUS_Aerodynamic_Workflow](https://github.com/Liming-Zheng/ARGUS_Aerodynamic_Workflow)
+（交接时为 private repository，需要仓库所有者邀请）。
 
 安装和运行步骤以英文 [`README.md`](README.md) 为准。
 

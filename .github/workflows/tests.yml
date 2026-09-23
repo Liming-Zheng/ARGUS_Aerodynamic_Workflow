@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-interface:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        python-version: ["3.11", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e ".[test]"
+      - run: python tools/configure_runtime.py --openvsp-root .runtime/openvsp --openvsp-python python --general-python python
+      - run: python -m pytest tests
+      - run: python -m pytest studies/argus_morphing/tests
+      - run: python -m pytest studies/argus_twist_morphing/tests
+      - run: python -m pytest studies/argus_corrected_cruise_comparison/tests
+      - run: python -m pytest studies/argus_mach01_comparison/tests
+      - run: python tools/validate_repository.py
+      - run: python examples/structural_coupling/run_demo.py

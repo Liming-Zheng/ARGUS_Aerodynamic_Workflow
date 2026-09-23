@@ -14,7 +14,13 @@ def main() -> int:
 
     required = [
         repo / "README.md",
+        repo / "docs" / "CROSS_PLATFORM_SETUP.md",
+        repo / "docs" / "STRUCTURAL_COUPLING.md",
+        repo / "docs" / "EXTENDING_OPTIMIZATION.md",
+        repo / "docs" / "images" / "coupled_workflow.png",
         repo / "inputs" / "geometry" / "baseline_corrected.vsp3",
+        repo / "interfaces" / "structural_request.schema.json",
+        repo / "interfaces" / "structural_result.schema.json",
         repo / "results" / "cruise" / "final_concept_summary.csv",
         repo / "results" / "low_speed" / "final_concept_summary.csv",
     ]
@@ -27,6 +33,14 @@ def main() -> int:
             json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:  # report exact malformed template
             failures.append(f"invalid JSON {path.relative_to(repo)}: {exc}")
+
+    for path in (repo / "interfaces").glob("*.schema.json"):
+        try:
+            schema = json.loads(path.read_text(encoding="utf-8"))
+            if schema.get("$schema") != "https://json-schema.org/draft/2020-12/schema":
+                failures.append(f"unexpected JSON Schema draft: {path.relative_to(repo)}")
+        except Exception as exc:
+            failures.append(f"invalid JSON schema {path.relative_to(repo)}: {exc}")
 
     absolute_pattern = re.compile(r"[A-Za-z]:[/\\](?:ARGUS|Users)[/\\]", re.I)
     for pattern in ("*.py", "*.md", "*.json", "*.csv"):
