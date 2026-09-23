@@ -1,0 +1,30 @@
+[
+  {
+    "case_id": "twist_baseline",
+    "shape_type": "uniform",
+    "twist_max_deg": 0.0
+  },
+  {
+    "case_id": "twist_uniform_washin_2deg",
+    "shape_type": "uniform",
+    "twist_max_deg": 2.0
+  },
+  {
+    "case_id": "twist_uniform_washout_2deg",
+    "shape_type": "uniform",
+    "twist_max_deg": -2.0
+  },
+  {
+    "case_id": "twist_bell_washin_4deg",
+    "shape_type": "bell",
+    "twist_max_deg": 4.0
+  },
+  {
+    "case_id": "twist_bell_washout_4deg",
+    "shape_type": "bell",
+    "twist_max_deg": -4.0
+  }
+]
+
+
+

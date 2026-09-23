@@ -1,0 +1,24 @@
+{
+  "control_etas": [
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "amplitude_bounds_over_c": [
+    0.0,
+    0.035
+  ],
+  "max_adjacent_delta": 0.018,
+  "include_boundary_zeros_in_adjacent_delta": true,
+  "root_bending_increase_limit_percent": 6.8,
+  "hinge_moment_constraint_enabled": false,
+  "baseline_root_bending_moment_Nm": 110.75353915805569,
+  "baseline_case": "baseline_corrected",
+  "x_h_over_c": 0.62,
+  "cl_target": 0.428277635108,
+  "geometry_status": "corrected_inserted_airfoil_interpolation"
+}
+
+

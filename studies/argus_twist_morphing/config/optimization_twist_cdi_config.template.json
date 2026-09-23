@@ -1,0 +1,42 @@
+{
+  "run_name": "twist_cdi_optimization",
+  "case_prefix": "twoi",
+  "seed_prefix": "two",
+  "random_seed": 20260619,
+  "design_variables": {
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "twist_bounds_deg": [-1.0, 4.0],
+    "fixed_boundary_twist_deg": 0.0,
+    "max_adjacent_twist_delta_deg": 2.5,
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25
+  },
+  "objective": {
+    "metric": "CDi",
+    "direction": "minimize"
+  },
+  "constraints": {
+    "root_bending": {
+      "enabled": false,
+      "maximum_percent": 6.8
+    }
+  },
+  "iterations": {
+    "max_iterations": 1,
+    "batch_size": 4
+  },
+  "runtime": {
+    "workers": 4,
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}",
+    "cl_tolerance": 0.00002
+  },
+  "notes": [
+    "First surrogate-light twist optimization run.",
+    "The first implementation uses deterministic candidate proposals around the best fixed-CL DOE wash-in direction.",
+    "Objective is pure CDi; root bending is reported but not constrained for this first twist optimization pass."
+  ]
+}
+
+

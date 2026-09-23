@@ -1,0 +1,73 @@
+{
+  "run_name": "whole_wing_cdi_sanity",
+  "case_prefix": "wsu",
+  "random_seed": 20260618,
+  "sample_filter": {
+    "case_id_prefixes": ["wsc_", "wsu_"]
+  },
+  "design_variables": {
+    "control_etas": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "amplitude_bounds_over_c": [0.0, 0.04],
+    "max_adjacent_delta": 1.0,
+    "include_boundary_zeros_in_adjacent_delta": false,
+    "x_h_over_c": 0.62,
+    "eta_start": 0.0,
+    "eta_end": 1.0
+  },
+  "objective": {
+    "metric": "CDi",
+    "direction": "minimize",
+    "root_bending_weight": 0.0,
+    "torque_weight": 0.0,
+    "endpoint_weight": 0.0,
+    "curvature_weight": 0.0
+  },
+  "constraints": {
+    "root_bending": {
+      "enabled": false,
+      "maximum_percent": 999.0,
+      "penalty": 0.0
+    },
+    "hinge_torque_proxy": {
+      "enabled": false,
+      "maximum_abs_Nm": 999999.0,
+      "penalty": 0.0
+    }
+  },
+  "algorithm": {
+    "name": "differential_evolution",
+    "population_size": 12,
+    "inner_max_iterations": 70,
+    "tolerance": 1e-7,
+    "polish": true,
+    "random_search_samples": 120000,
+    "minimum_candidate_distance": 0.004
+  },
+  "surrogate": {
+    "optimizer_restarts": 4,
+    "exploration_weight": 0.08
+  },
+  "iterations": {
+    "max_iterations": 2,
+    "batch_size": 4,
+    "minimum_absolute_improvement": 1e-6,
+    "early_stop_patience": 3
+  },
+  "runtime": {
+    "workers": 4,
+    "trim_mode": "fast",
+    "fast_trim_alpha_low": 0.5,
+    "fast_trim_alpha_high": 2.5,
+    "fast_trim_alpha_points": 3,
+    "search_cl_tolerance": 0.0002,
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  },
+  "notes": [
+    "Whole-wing unconstrained trailing-edge morphing sanity check requested by Marco.",
+    "The purpose is workflow verification: with only CDi in the objective and no engineering constraints, the lift distribution should move toward an elliptical reference.",
+    "This run is not intended as an actuator-feasible engineering candidate."
+  ]
+}
+
+

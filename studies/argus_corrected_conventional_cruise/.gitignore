@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+
+# Retain exact .vsp3 geometries and compact CSV/JSON audit outputs.
+outputs/**/model/*
+!outputs/**/model/*.vsp3
+
+# VSPAERO regenerates these solver sidecars from the retained .vsp3 files.
+outputs/**/*.adb
+outputs/**/*.adb.cases
+outputs/**/*.csf
+outputs/**/*.group.*
+outputs/**/*.history
+outputs/**/*.lod
+outputs/**/*.polar
+outputs/**/*.vkey
+outputs/**/*.vspaero
+outputs/**/*.vspgeom
+outputs/**/evaluation.log
+outputs/**/*.log
+outputs/**/*.pid

@@ -1,0 +1,88 @@
+[
+  {
+    "case_id": "opt_c001",
+    "candidate_name": "minimum_drag",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03234718082378696,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.03154274299095988,
+      0.021363374018791386,
+      0.03234718082378696,
+      0.027642891521415486,
+      0.007643043322936343
+    ],
+    "max_adjacent_delta": 0.019999848198479143,
+    "max_spanwise_slope": 0.22856969369690452,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Surrogate candidate: minimum_drag"
+  },
+  {
+    "case_id": "opt_c002",
+    "candidate_name": "balanced",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.029171610011693678,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.028299387573687905,
+      0.01928703384103173,
+      0.029171610011693678,
+      0.02190143579232981,
+      0.0019014337806797412
+    ],
+    "max_adjacent_delta": 0.02000000201165007,
+    "max_spanwise_slope": 0.2285714515617151,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Surrogate candidate: balanced"
+  },
+  {
+    "case_id": "opt_c003",
+    "candidate_name": "conservative",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.023986415620349765,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.023986415620349765,
+      0.018142636708973765,
+      0.022491228602069577,
+      0.019359840563455792,
+      9.26960241204311e-10
+    ],
+    "max_adjacent_delta": 0.01935983963649555,
+    "max_spanwise_slope": 0.22125531013137775,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Surrogate candidate: conservative"
+  }
+]
+
+

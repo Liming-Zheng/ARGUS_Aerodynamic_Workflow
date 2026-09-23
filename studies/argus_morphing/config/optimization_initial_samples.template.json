@@ -1,0 +1,436 @@
+[
+  {
+    "case_id": "opt_s001",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.01,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+    ],
+    "max_adjacent_delta": 0.0,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s002",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.02,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.02
+    ],
+    "max_adjacent_delta": 0.0,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s003",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "max_adjacent_delta": 0.0,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s004",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.04,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.04,
+      0.04,
+      0.04,
+      0.04,
+      0.04
+    ],
+    "max_adjacent_delta": 0.0,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s005",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.01,
+      0.015,
+      0.02,
+      0.025,
+      0.03
+    ],
+    "max_adjacent_delta": 0.005000000000000001,
+    "max_spanwise_slope": 0.057142857142857176,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s006",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.03,
+      0.025,
+      0.02,
+      0.015,
+      0.01
+    ],
+    "max_adjacent_delta": 0.005000000000000001,
+    "max_spanwise_slope": 0.05714285714285719,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s007",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03151884362764421,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.022250402631425695,
+      0.010275316913464914,
+      0.029620001847430848,
+      0.012264679172505254,
+      0.03151884362764421
+    ],
+    "max_adjacent_delta": 0.019344684933965933,
+    "max_spanwise_slope": 0.22108211353103918,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s008",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.038413833377918205,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.038413833377918205,
+      0.02367084990574526,
+      0.03342690418638355,
+      0.03721771810183055,
+      0.027706919764255586
+    ],
+    "max_adjacent_delta": 0.014742983472172944,
+    "max_spanwise_slope": 0.16849123968197646,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s009",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.028864483203793062,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.028864483203793062,
+      0.02184196191696342,
+      0.013181754489028426,
+      0.02380426222462459,
+      0.004368564434380224
+    ],
+    "max_adjacent_delta": 0.019435697790244365,
+    "max_spanwise_slope": 0.22212226045993583,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s010",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.022936463358445458,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.022936463358445458,
+      0.017352661011571444,
+      0.014822952943571886,
+      0.01726490043084516,
+      0.004770183806995409
+    ],
+    "max_adjacent_delta": 0.012494716623849753,
+    "max_spanwise_slope": 0.14279676141542588,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s011",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03005000095393842,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.03005000095393842,
+      0.01909263040991576,
+      0.02296523502551181,
+      0.02799125958177696,
+      0.028068968112636185
+    ],
+    "max_adjacent_delta": 0.010957370544022661,
+    "max_spanwise_slope": 0.12522709193168752,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s012",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.020595131210071616,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.00660095049491654,
+      0.004354080653183304,
+      0.020595131210071616,
+      0.013272683218709651,
+      0.007776272658856825
+    ],
+    "max_adjacent_delta": 0.016241050556888313,
+    "max_spanwise_slope": 0.1856120063644378,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s013",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03767498925948086,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.03656924708715614,
+      0.0274510207852481,
+      0.021009896871352494,
+      0.030546932646305924,
+      0.03767498925948086
+    ],
+    "max_adjacent_delta": 0.00953703577495343,
+    "max_spanwise_slope": 0.10899469457089632,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s014",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.030420658591133246,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.004013507172189336,
+      0.023823908128689616,
+      0.030420658591133246,
+      0.019584703659940233,
+      0.01573596759045707
+    ],
+    "max_adjacent_delta": 0.01981040095650028,
+    "max_spanwise_slope": 0.22640458236000316,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s015",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.032756053385193516,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.032756053385193516,
+      0.019953186721898723,
+      0.0028715885656180806,
+      0.01567970543858378,
+      0.013600034719919057
+    ],
+    "max_adjacent_delta": 0.01708159815628064,
+    "max_spanwise_slope": 0.19521826464320727,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  },
+  {
+    "case_id": "opt_s016",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.038831585146252984,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.6875,
+      0.775,
+      0.8625,
+      0.95
+    ],
+    "control_amplitudes_over_c": [
+      0.01802350924442913,
+      0.025473414372432588,
+      0.024515816795684924,
+      0.02313145814255171,
+      0.038831585146252984
+    ],
+    "max_adjacent_delta": 0.015700127003701273,
+    "max_spanwise_slope": 0.1794300228994433,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "ARGUS optimization initial design"
+  }
+]
+
+

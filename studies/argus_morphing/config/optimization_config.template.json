@@ -1,0 +1,24 @@
+{
+  "control_etas": [
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "amplitude_bounds_over_c": [
+    0.0,
+    0.04
+  ],
+  "max_adjacent_delta": 0.018,
+  "include_boundary_zeros_in_adjacent_delta": true,
+  "root_bending_increase_limit_percent": 6.8,
+  "hinge_moment_constraint_enabled": false,
+  "hinge_moment_note": "Withdrawn after 2026-07-28 unit/definition audit. A physical hinge moment requires surface-pressure integration about the local x_h/c line.",
+  "x_h_over_c": 0.62,
+  "cl_target": 0.428277635108,
+  "initial_sample_count": 16,
+  "seed": 20260609
+}
+
+

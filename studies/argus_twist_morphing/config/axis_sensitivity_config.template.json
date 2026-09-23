@@ -1,0 +1,27 @@
+{
+  "axis_locations_x_over_c": [0.25, 0.33, 0.4, 0.5],
+  "twist_cases": [
+    {
+      "case_name": "baseline",
+      "twist_max_deg": 0.0
+    },
+    {
+      "case_name": "washin_2deg",
+      "twist_max_deg": 2.0
+    },
+    {
+      "case_name": "washout_2deg",
+      "twist_max_deg": -2.0
+    }
+  ],
+  "shape_type": "uniform",
+  "transition_fraction": 0.15,
+  "moment_reference_x_over_c": 0.25,
+  "notes": [
+    "Each axis has an axis-matched baseline to isolate the incremental twist effect.",
+    "Leading- and trailing-edge travel is calculated as rigid-section motion about the selected axis.",
+    "The aerodynamic moment about the axis is a VSPAERO sectional-load proxy, not an actuator sizing result."
+  ]
+}
+
+

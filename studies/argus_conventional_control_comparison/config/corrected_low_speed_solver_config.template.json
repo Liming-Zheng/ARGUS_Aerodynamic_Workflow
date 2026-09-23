@@ -1,0 +1,32 @@
+{
+  "cl_target": 0.428277635108,
+  "baseline_case": "baseline_corrected",
+  "baseline_CDi": 0.009878741611,
+  "baseline_root_bending_moment_Nm": 110.75353915805569,
+  "root_bending_increase_limit_percent": 6.8,
+  "deflection_bounds_deg": [
+    -6.6544,
+    6.6544
+  ],
+  "hinge_moment_constraint_enabled": false,
+  "geometry_status": "corrected_inserted_airfoil_interpolation",
+  "control_geometry": {
+    "source": "NASA TP-1580 Figure 1(b), AR=12 low-speed aileron",
+    "hinge_x_over_c": 0.7,
+    "segments": [
+      {
+        "name": "low_speed_aileron_inboard",
+        "eta_start": 0.71,
+        "eta_end": 0.852
+      },
+      {
+        "name": "low_speed_aileron_outboard",
+        "eta_start": 0.852,
+        "eta_end": 0.97
+      }
+    ],
+    "representation": "zero-gap rigid aft-section rotation"
+  }
+}
+
+

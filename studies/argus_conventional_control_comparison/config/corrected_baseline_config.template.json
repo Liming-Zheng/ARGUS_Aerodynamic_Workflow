@@ -1,0 +1,27 @@
+{
+  "source_model": "${ARGUS_REPO_ROOT}/inputs/geometry/nasa_eet_ar12_original.vsp3",
+  "wing_name": "cruise_wing",
+  "alphas_deg": [-2.0, 0.0, 2.0, 4.0, 6.0, 8.0],
+  "default_alpha_deg": 2.0,
+  "beta_deg": 0.0,
+  "mach": 0.1,
+  "load_condition_rho_kg_m3": 1.225003,
+  "load_condition_velocity_m_s": 30.48,
+  "legacy_rho_kg_m3": 1.225,
+  "legacy_velocity_m_s": 45.0,
+  "wake_iterations": 3,
+  "analysis_method": 0,
+  "reference_area_m2": 13.357221,
+  "reference_chord_m": 1.292508330249044,
+  "reference_span_m": 11.999992819155672,
+  "reference_area_native": 13.357221,
+  "reference_chord_native": 1.292508330249044,
+  "reference_span_native": 11.999992819155672,
+  "native_geometry_length_unit": "ft",
+  "native_length_to_m": 0.3048,
+  "outer_eta_thresholds": [0.55, 0.6, 0.65],
+  "primary_outer_eta": 0.6,
+  "units_note": "OpenVSP reference geometry values are native ft/ft^2 despite legacy key names. Dimensional strip loads are audited in SI using ft-to-m conversion and the native VSPAERO condition (rho=0.002377 slug/ft^3, V=100 ft/s)."
+}
+
+

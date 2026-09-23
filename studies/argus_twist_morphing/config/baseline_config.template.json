@@ -1,0 +1,23 @@
+{
+  "source_model": "${ARGUS_REPO_ROOT}/inputs/geometry/nasa_eet_ar12_original.vsp3",
+  "wing_name": "cruise_wing",
+  "alphas_deg": [-2.0, 0.0, 2.0, 4.0, 6.0, 8.0],
+  "default_alpha_deg": 2.0,
+  "beta_deg": 0.0,
+  "mach": 0.1,
+  "rho_kg_m3": 1.225,
+  "velocity_m_s": 45.0,
+  "wake_iterations": 3,
+  "analysis_method": 0,
+  "reference_area_m2": 13.357221,
+  "reference_chord_m": 1.292508330249044,
+  "reference_span_m": 11.999992819155672,
+  "target_CL": 0.5,
+  "alpha_min_deg": -4.0,
+  "alpha_max_deg": 12.0,
+  "outer_eta_thresholds": [0.55, 0.6, 0.65],
+  "primary_outer_eta": 0.6,
+  "units_note": "Matches the trailing-edge morphing study so aerodynamic and load results can be compared directly."
+}
+
+

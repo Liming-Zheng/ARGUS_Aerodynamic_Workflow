@@ -1,0 +1,86 @@
+{
+  "study_name": "argus_post_audit_corrected_conventional_cruise",
+  "source_model": "${ARGUS_REPO_ROOT}/inputs/geometry/baseline_corrected.vsp3",
+  "wing_name": "cruise_wing",
+  "geometry_audit": {
+    "status": "post_Tyler_audit_corrected",
+    "inserted_airfoil_interpolation": "coordinate_resampling_and_linear_blending",
+    "matched_continuous_concept_project": "argus_corrected_cruise_comparison"
+  },
+  "native_geometry": {
+    "length_unit": "ft",
+    "model_unit_to_m_wind_tunnel": 0.3048,
+    "reference_area_model_units2": 12.0,
+    "reference_span_model_units": 12.0,
+    "reference_chord_model_units": 1.1166666666666667,
+    "reference_source": "NASA TP-1580: Sref=12 ft^2, bref=12 ft, cref=13.4 in"
+  },
+  "aircraft_scale": {
+    "target_reference_area_m2": 122.6,
+    "preserve_reference_aspect_ratio": true,
+    "reference_aspect_ratio": 12.0,
+    "scale_basis": "reference_area"
+  },
+  "flight_states": [
+    {
+      "name": "early_cruise",
+      "mass_equivalent_kg": 74500.0,
+      "altitude_m": 10000.0,
+      "mach": 0.78
+    },
+    {
+      "name": "late_cruise",
+      "mass_equivalent_kg": 56000.0,
+      "altitude_m": 12000.0,
+      "mach": 0.78
+    }
+  ],
+  "morphing": {
+    "eta_start": 0.71,
+    "eta_end": 0.97
+  },
+  "conventional_control": {
+    "source": "NASA TP-1580 Figure 1(b), AR=12 low-speed aileron",
+    "hinge_x_over_c": 0.70,
+    "segments": [
+      {
+        "name": "low_speed_aileron_inboard",
+        "eta_start": 0.710,
+        "eta_end": 0.852
+      },
+      {
+        "name": "low_speed_aileron_outboard",
+        "eta_start": 0.852,
+        "eta_end": 0.970
+      }
+    ],
+    "mechanical_deflection_limit_deg": 30.0,
+    "optimization_deflection_bounds_deg": [-6.6544, 6.6544],
+    "optimization_bound_basis": "Equal maximum trailing-edge displacement to A/c=0.035 with a 30-percent-chord hinged surface",
+    "span_edge_representation": "OpenVSP loft interpolation over the adjacent geometric strip",
+    "hinge_gap_model": "zero-gap outer-mold-line approximation",
+    "adjacent_segment_jump_constraint_enabled": false
+  },
+  "aerodynamic_analysis": {
+    "analysis_method": 0,
+    "wake_iterations": 3,
+    "objective": "CDi",
+    "root_bending_limit_strategy": "early_cruise_rigid_baseline",
+    "hinge_moment_constraint_enabled": false,
+    "strict_cl_tolerance": 2e-5,
+    "constraint_relative_tolerance": 0.001
+  },
+  "optimization": {
+    "coarse_grid_levels_deg": [-6.6544, -3.3272, 0.0, 3.3272, 6.6544],
+    "refinement_half_width_deg": 1.6636,
+    "refinement_levels_per_axis": 3
+  },
+  "runtime": {
+    "workers": 4,
+    "openvsp_root": "${OPENVSP_ROOT}",
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  }
+}
+
+

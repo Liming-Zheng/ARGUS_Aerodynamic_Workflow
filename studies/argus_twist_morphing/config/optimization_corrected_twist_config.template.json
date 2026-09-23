@@ -1,0 +1,88 @@
+{
+  "run_name": "corrected_twist_cdi",
+  "case_prefix": "ctw",
+  "sample_filter": {
+    "case_id_prefixes": [
+      "ctw_"
+    ]
+  },
+  "random_seed": 20260729,
+  "paths": {
+    "optimization_root": "outputs/corrected_twist_optimization",
+    "baseline_model": "../argus_morphing/outputs/tyler_validation_2026_07_29/baseline_corrected/baseline_corrected.vsp3",
+    "solver_config": "config/corrected_twist_solver_config.json"
+  },
+  "design_variables": {
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "twist_bounds_deg": [
+      -1.0,
+      4.0
+    ],
+    "max_adjacent_twist_delta_deg": 2.5,
+    "include_root_boundary_zero_in_adjacent_delta": true,
+    "rotation_axis_x_over_c": 0.25,
+    "eta_start": 0.6,
+    "eta_end": 1.0
+  },
+  "objective": {
+    "metric": "CDi",
+    "direction": "minimize",
+    "root_bending_weight": 0.0,
+    "torque_weight": 0.0,
+    "endpoint_weight": 0.0,
+    "curvature_weight": 0.0
+  },
+  "constraints": {
+    "root_bending": {
+      "enabled": true,
+      "maximum_percent": 6.8,
+      "penalty": 800.0
+    },
+    "hinge_torque_proxy": {
+      "enabled": false,
+      "status": "not_applicable"
+    }
+  },
+  "algorithm": {
+    "name": "differential_evolution",
+    "population_size": 12,
+    "inner_max_iterations": 70,
+    "tolerance": 1e-07,
+    "polish": true,
+    "random_search_samples": 100000,
+    "minimum_candidate_distance": 0.25
+  },
+  "surrogate": {
+    "optimizer_restarts": 4,
+    "exploration_weight": 0.15
+  },
+  "iterations": {
+    "max_iterations": 2,
+    "batch_size": 4,
+    "minimum_absolute_improvement": 5e-07,
+    "early_stop_patience": 2
+  },
+  "runtime": {
+    "workers": 4,
+    "trim_mode": "fast",
+    "fast_trim_alpha_low": 0.5,
+    "fast_trim_alpha_high": 2.5,
+    "fast_trim_alpha_points": 2,
+    "search_cl_tolerance": 0.0002,
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  },
+  "notes": [
+    "Independent twist optimization on the corrected inserted-airfoil baseline.",
+    "Pure CDi objective with the same illustrative 6.8% root-bending screen.",
+    "Five distributed-twist commands rotate sections about x/c=0.25."
+  ]
+}
+
+

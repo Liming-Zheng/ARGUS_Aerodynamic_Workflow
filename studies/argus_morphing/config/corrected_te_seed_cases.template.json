@@ -1,0 +1,508 @@
+[
+  {
+    "case_id": "cte_seed_001",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.0,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_adjacent_delta": 0.0,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_002",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.013987130688627863,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.003210659278858108,
+      0.010391149399714625,
+      0.013987130688627863,
+      0.007279496759084448,
+      8.721767575781136e-05
+    ],
+    "max_adjacent_delta": 0.007192279083326637,
+    "max_spanwise_slope": 0.07192279083326639,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_003",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.019232304696863312,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.004414656508429898,
+      0.014287830424607609,
+      0.019232304696863312,
+      0.010009308043741116,
+      0.00011992430416699064
+    ],
+    "max_adjacent_delta": 0.009889383739574126,
+    "max_spanwise_slope": 0.09889383739574129,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_004",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.02447747870509876,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.005618653738001689,
+      0.01818451144950059,
+      0.02447747870509876,
+      0.012739119328397781,
+      0.0001526309325761699
+    ],
+    "max_adjacent_delta": 0.012586488395821611,
+    "max_spanwise_slope": 0.12586488395821616,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_005",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.02867361791168712,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.006581851521659121,
+      0.021301856269414977,
+      0.02867361791168712,
+      0.014922968356123115,
+      0.00017879623530351327
+    ],
+    "max_adjacent_delta": 0.014744172120819602,
+    "max_spanwise_slope": 0.14744172120819607,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_006",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.03147104404941269,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.007223983377430743,
+      0.023380086149357902,
+      0.03147104404941269,
+      0.016378867707940007,
+      0.00019623977045507557
+    ],
+    "max_adjacent_delta": 0.01618262793748493,
+    "max_spanwise_slope": 0.16182627937484936,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_007",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.012,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.003,
+      0.009000000000000001,
+      0.012,
+      0.0078000000000000005,
+      0.0018
+    ],
+    "max_adjacent_delta": 0.006000000000000001,
+    "max_spanwise_slope": 0.060000000000000026,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_008",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.02,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.005,
+      0.015,
+      0.02,
+      0.013000000000000001,
+      0.003
+    ],
+    "max_adjacent_delta": 0.010000000000000002,
+    "max_spanwise_slope": 0.10000000000000005,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_009",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.028,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.007,
+      0.021,
+      0.028,
+      0.0182,
+      0.0042
+    ],
+    "max_adjacent_delta": 0.014000000000000002,
+    "max_spanwise_slope": 0.14000000000000004,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_010",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.034,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.0085,
+      0.025500000000000002,
+      0.034,
+      0.0221,
+      0.0051
+    ],
+    "max_adjacent_delta": 0.017,
+    "max_spanwise_slope": 0.17000000000000004,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_011",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.008,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.008,
+      0.008,
+      0.008,
+      0.008,
+      0.008
+    ],
+    "max_adjacent_delta": 0.008,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_012",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.014,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.014,
+      0.014,
+      0.014,
+      0.014,
+      0.014
+    ],
+    "max_adjacent_delta": 0.014,
+    "max_spanwise_slope": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_013",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.016649674021158,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.013652194672203155,
+      0.007954537133034357,
+      0.015424816054833682,
+      0.01654343250684053,
+      0.016649674021158
+    ],
+    "max_adjacent_delta": 0.016649674021158,
+    "max_spanwise_slope": 0.07470278921799318,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_014",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.032441803989137326,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.015313786686165553,
+      0.009908376957542004,
+      0.026906312715800833,
+      0.032441803989137326,
+      0.014748633171397107
+    ],
+    "max_adjacent_delta": 0.017693170817740217,
+    "max_spanwise_slope": 0.1769317081774022,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_015",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.018853060476412685,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.0074401669001615866,
+      0.018853060476412685,
+      0.005028218296591386,
+      0.007796573590752058,
+      0.0003217850340210038
+    ],
+    "max_adjacent_delta": 0.013824842179821299,
+    "max_spanwise_slope": 0.13824842179821287,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_016",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.016546760690485694,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.008507717121100511,
+      0.01049991658634624,
+      0.003010191285254729,
+      0.009748686087857002,
+      0.016546760690485694
+    ],
+    "max_adjacent_delta": 0.016546760690485694,
+    "max_spanwise_slope": 0.07489725301091506,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_017",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.014498330746718227,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.006695461598878275,
+      0.000902806164441889,
+      0.014498330746718227,
+      0.0020158492394459202,
+      0.012987349638976497
+    ],
+    "max_adjacent_delta": 0.013595524582276338,
+    "max_spanwise_slope": 0.13595524582276325,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  },
+  {
+    "case_id": "cte_seed_018",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "x_h_over_c": 0.62,
+    "A_max_over_c": 0.017814859498744243,
+    "shape_type": "control_points",
+    "control_etas": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "control_amplitudes_over_c": [
+      0.0035368781924299416,
+      0.005763583796366608,
+      0.017814859498744243,
+      0.007336966817545369,
+      0.008117870616564847
+    ],
+    "max_adjacent_delta": 0.012051275702377635,
+    "max_spanwise_slope": 0.12051275702377624,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil trailing-edge optimization seed."
+  }
+]
+
+

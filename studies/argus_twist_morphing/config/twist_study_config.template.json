@@ -1,0 +1,28 @@
+{
+  "concept": "distributed_twist_morphing",
+  "wing_name": "cruise_wing",
+  "eta_start": 0.6,
+  "eta_end": 0.95,
+  "rotation_axis_x_over_c": 0.25,
+  "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+  "twist_bounds_deg": [-5.0, 5.0],
+  "max_adjacent_twist_delta_deg": 2.5,
+  "max_spanwise_twist_slope_deg_per_eta": 30.0,
+  "boundary_condition": "zero_increment_outside_region",
+  "initial_objectives": [
+    "minimum_induced_drag_at_fixed_CL",
+    "minimum_root_bending_at_fixed_CL",
+    "balanced_drag_and_bending"
+  ],
+  "later_objective": "roll_control_with_differential_twist",
+  "verification_required": [
+    "airfoil_coordinates_unchanged",
+    "section_chord_unchanged",
+    "section_twist_matches_schedule",
+    "quarter_chord_spar_axis_motion_audited",
+    "smooth_transition_at_eta_start_and_eta_end"
+  ]
+}
+
+
+

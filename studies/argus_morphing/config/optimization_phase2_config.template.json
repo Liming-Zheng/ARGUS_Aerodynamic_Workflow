@@ -1,0 +1,64 @@
+{
+  "run_name": "user_optimization_phase2",
+  "case_prefix": "ph2",
+  "random_seed": 20260610,
+  "design_variables": {
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "amplitude_bounds_over_c": [0.0, 0.035],
+    "max_adjacent_delta": 0.015,
+    "x_h_over_c": 0.62,
+    "eta_start": 0.6,
+    "eta_end": 0.95
+  },
+  "objective": {
+    "metric": "CDi",
+    "direction": "minimize",
+    "root_bending_weight": 0.12,
+    "torque_weight": 0.05,
+    "endpoint_weight": 0.4,
+    "curvature_weight": 0.8
+  },
+  "constraints": {
+    "root_bending": {
+      "enabled": true,
+      "maximum_percent": 6.8,
+      "penalty": 150.0
+    },
+    "hinge_torque_proxy": {
+      "enabled": true,
+      "maximum_abs_Nm": 1050.0,
+      "penalty": 0.0002
+    }
+  },
+  "algorithm": {
+    "name": "differential_evolution",
+    "population_size": 12,
+    "inner_max_iterations": 60,
+    "tolerance": 1e-7,
+    "polish": true,
+    "random_search_samples": 100000,
+    "minimum_candidate_distance": 0.004
+  },
+  "surrogate": {
+    "optimizer_restarts": 4,
+    "exploration_weight": 0.30
+  },
+  "iterations": {
+    "max_iterations": 2,
+    "batch_size": 4,
+    "minimum_absolute_improvement": 1e-6,
+    "early_stop_patience": 2
+  },
+  "runtime": {
+    "workers": 4,
+    "trim_mode": "fast",
+    "fast_trim_alpha_low": 1.0,
+    "fast_trim_alpha_high": 2.5,
+    "fast_trim_alpha_points": 2,
+    "search_cl_tolerance": 0.0002,
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  }
+}
+
+

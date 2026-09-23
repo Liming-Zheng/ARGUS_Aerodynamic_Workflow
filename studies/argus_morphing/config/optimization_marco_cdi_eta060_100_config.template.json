@@ -1,0 +1,71 @@
+{
+  "run_name": "marco_cdi_eta060_100",
+  "case_prefix": "mco",
+  "random_seed": 20260616,
+  "design_variables": {
+    "control_etas": [0.6, 0.7, 0.8, 0.9, 1.0],
+    "amplitude_bounds_over_c": [0.0, 0.035],
+    "max_adjacent_delta": 0.018,
+    "include_boundary_zeros_in_adjacent_delta": true,
+    "x_h_over_c": 0.62,
+    "eta_start": 0.6,
+    "eta_end": 1.0
+  },
+  "objective": {
+    "metric": "CDi",
+    "direction": "minimize",
+    "root_bending_weight": 0.0,
+    "torque_weight": 0.0,
+    "endpoint_weight": 0.0,
+    "curvature_weight": 0.0
+  },
+  "constraints": {
+    "root_bending": {
+      "enabled": true,
+      "maximum_percent": 6.8,
+      "penalty": 150.0
+    },
+    "hinge_torque_proxy": {
+      "enabled": true,
+      "maximum_abs_Nm": 1050.0,
+      "penalty": 0.0002
+    }
+  },
+  "algorithm": {
+    "name": "differential_evolution",
+    "population_size": 12,
+    "inner_max_iterations": 60,
+    "tolerance": 1e-7,
+    "polish": true,
+    "random_search_samples": 100000,
+    "minimum_candidate_distance": 0.004
+  },
+  "surrogate": {
+    "optimizer_restarts": 4,
+    "exploration_weight": 0.25
+  },
+  "iterations": {
+    "max_iterations": 2,
+    "batch_size": 4,
+    "minimum_absolute_improvement": 1e-6,
+    "early_stop_patience": 2
+  },
+  "runtime": {
+    "workers": 4,
+    "trim_mode": "fast",
+    "fast_trim_alpha_low": 1.0,
+    "fast_trim_alpha_high": 2.5,
+    "fast_trim_alpha_points": 2,
+    "search_cl_tolerance": 0.0002,
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  },
+  "notes": [
+    "Marco review response configuration.",
+    "Objective is pure CDi; load and smoothness requirements are inequality constraints.",
+    "Morphing region is extended to the wing tip, 0.6 <= eta <= 1.0.",
+    "Adjacent jump includes virtual boundary control points A0=0 and A6=0."
+  ]
+}
+
+

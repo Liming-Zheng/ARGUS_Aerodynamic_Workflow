@@ -1,0 +1,83 @@
+{
+  "study_name": "argus_post_audit_corrected_cruise_comparison",
+  "source_model": "${ARGUS_REPO_ROOT}/inputs/geometry/baseline_corrected.vsp3",
+  "wing_name": "cruise_wing",
+  "geometry_audit": {
+    "status": "corrected_inserted_airfoil_interpolation",
+    "original_sections_preserved": true,
+    "inserted_sections_blended_between_original_brackets": true,
+    "point_count_per_surface": 161,
+    "audit_file": "${ARGUS_REPO_ROOT}/inputs/geometry/airfoil_interpolation_audit.json"
+  },
+  "native_geometry": {
+    "length_unit": "ft",
+    "model_unit_to_m_wind_tunnel": 0.3048,
+    "reference_area_model_units2": 12.0,
+    "reference_span_model_units": 12.0,
+    "reference_chord_model_units": 1.1166666666666667,
+    "reference_source": "NASA TP-1580: Sref=12 ft^2, bref=12 ft, cref=13.4 in"
+  },
+  "aircraft_scale": {
+    "target_reference_area_m2": 122.6,
+    "preserve_reference_aspect_ratio": true,
+    "reference_aspect_ratio": 12.0,
+    "scale_basis": "reference_area"
+  },
+  "flight_states": [
+    {
+      "name": "early_cruise",
+      "mass_equivalent_kg": 74500.0,
+      "altitude_m": 10000.0,
+      "mach": 0.78
+    },
+    {
+      "name": "late_cruise",
+      "mass_equivalent_kg": 56000.0,
+      "altitude_m": 12000.0,
+      "mach": 0.78
+    }
+  ],
+  "morphing": {
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "fixed_inboard_boundary_value": 0.0,
+    "active_control_etas": [0.68, 0.76, 0.84, 0.92, 1.0],
+    "interpolation": "pchip",
+    "tip_boundary": "free_nonzero",
+    "dense_constraint_points": 401,
+    "trailing_edge": {
+      "x_h_over_c": 0.62,
+      "amplitude_bounds_over_c": [-0.035, 0.035],
+      "max_adjacent_control_delta_over_c": 0.025
+    },
+    "twist": {
+      "rotation_axis_x_over_c": 0.25,
+      "twist_bounds_deg": [-4.0, 4.0],
+      "max_adjacent_control_delta_deg": 3.0
+    }
+  },
+  "aerodynamic_analysis": {
+    "analysis_method": 0,
+    "wake_iterations": 3,
+    "objective": "CDi",
+    "root_bending_limit_strategy": "early_cruise_rigid_baseline",
+    "hinge_moment_constraint_enabled": false,
+    "strict_cl_tolerance": 2e-5,
+    "constraint_relative_tolerance": 0.001
+  },
+  "transonic_scope": {
+    "argus_cruise_mach": 0.78,
+    "nasa_tm_x_71996_design_CL": 0.6,
+    "nasa_tm_x_71996_drag_rise_mach": 0.802,
+    "nasa_tm_x_71996_unit_reynolds_per_m": 16400000.0,
+    "interpretation": "VSPAERO provides corrected-geometry low-order deltas; compressible RANS and experiment are required for transonic validation."
+  },
+  "runtime": {
+    "workers": 4,
+    "openvsp_root": "${OPENVSP_ROOT}",
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  }
+}
+
+

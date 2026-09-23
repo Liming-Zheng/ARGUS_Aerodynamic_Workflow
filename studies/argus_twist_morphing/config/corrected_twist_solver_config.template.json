@@ -1,0 +1,24 @@
+{
+  "control_etas": [
+    0.68,
+    0.76,
+    0.84,
+    0.92,
+    1.0
+  ],
+  "twist_bounds_deg": [
+    -1.0,
+    4.0
+  ],
+  "max_adjacent_twist_delta_deg": 2.5,
+  "include_root_boundary_zero_in_adjacent_delta": true,
+  "root_bending_increase_limit_percent": 6.8,
+  "hinge_moment_constraint_enabled": false,
+  "baseline_root_bending_moment_Nm": 110.75353915805569,
+  "baseline_case": "baseline_corrected",
+  "rotation_axis_x_over_c": 0.25,
+  "cl_target": 0.428277635108,
+  "geometry_status": "corrected_inserted_airfoil_interpolation"
+}
+
+

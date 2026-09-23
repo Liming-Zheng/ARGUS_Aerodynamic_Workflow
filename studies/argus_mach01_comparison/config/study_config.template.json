@@ -1,0 +1,45 @@
+{
+  "study_name": "argus_mach01_four_concept_fixed_cl_comparison",
+  "definition": "Low-speed fixed-CL method-sensitivity study; not a weight-supporting aircraft flight state",
+  "mach": 0.1,
+  "altitude_m": 0.0,
+  "target_CL": 0.529297087,
+  "target_CL_source": "Existing early-cruise target CL",
+  "wing_name": "cruise_wing",
+  "source_projects": {
+    "cruise": "${ARGUS_REPO_ROOT}/studies/argus_corrected_cruise_comparison",
+    "conventional": "${ARGUS_REPO_ROOT}/studies/argus_conventional_control_comparison"
+  },
+  "refinement_geometry_root": "${ARGUS_REPO_ROOT}/studies/argus_mach01_comparison/outputs/refinement_geometries",
+  "native_geometry": {
+    "length_unit": "ft",
+    "model_unit_to_m_wind_tunnel": 0.3048,
+    "reference_area_model_units2": 12.0,
+    "reference_span_model_units": 12.0,
+    "reference_chord_model_units": 1.1166666666666667
+  },
+  "aircraft_scale": {
+    "target_reference_area_m2": 122.6,
+    "reference_aspect_ratio": 12.0
+  },
+  "concept_regions": {
+    "rigid": [0.0, 0.0],
+    "conventional_hinged": [0.71, 0.97],
+    "trailing_edge": [0.6, 1.0],
+    "twist": [0.6, 1.0]
+  },
+  "aerodynamic_analysis": {
+    "analysis_method": 0,
+    "wake_iterations": 3,
+    "strict_cl_tolerance": 2e-5,
+    "constraint_relative_tolerance": 0.0
+  },
+  "runtime": {
+    "workers": 1,
+    "openvsp_root": "${OPENVSP_ROOT}",
+    "openvsp_python": "${OPENVSP_PYTHON}",
+    "general_python": "${GENERAL_PYTHON}"
+  }
+}
+
+

@@ -1,0 +1,112 @@
+[
+  {
+    "case_id": "cffw_b01_c01",
+    "iteration": 1,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "shape_type": "control_points",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "proposal_reason": "predicted_minimum",
+    "notes": "Corrected-airfoil candidate proposed from native CDiw surrogate.",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      1.7997090452806734,
+      1.1259611108012724,
+      1.278170679852845,
+      0.25732028793315953,
+      -0.9993675451337649
+    ],
+    "rotation_axis_x_over_c": 0.25,
+    "max_adjacent_twist_delta_deg": 1.7997090452806734
+  },
+  {
+    "case_id": "cffw_b01_c02",
+    "iteration": 1,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "shape_type": "control_points",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "proposal_reason": "lower_confidence_bound",
+    "notes": "Corrected-airfoil candidate proposed from native CDiw surrogate.",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.327973013619184,
+      1.1471714548065277,
+      0.613045045008763,
+      0.09049426824726736,
+      -0.9941456014535218
+    ],
+    "rotation_axis_x_over_c": 0.25,
+    "max_adjacent_twist_delta_deg": 2.327973013619184
+  },
+  {
+    "case_id": "cffw_b01_c03",
+    "iteration": 1,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "shape_type": "control_points",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "proposal_reason": "near_bending_boundary",
+    "notes": "Corrected-airfoil candidate proposed from native CDiw surrogate.",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.389462345417308,
+      3.1429835071941037,
+      2.6438660509755656,
+      1.243640777016794,
+      -0.7171797325454079
+    ],
+    "rotation_axis_x_over_c": 0.25,
+    "max_adjacent_twist_delta_deg": 2.389462345417308
+  },
+  {
+    "case_id": "cffw_b01_c04",
+    "iteration": 1,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "shape_type": "control_points",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "proposal_reason": "uncertainty_exploration",
+    "notes": "Corrected-airfoil candidate proposed from native CDiw surrogate.",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.2882241054691685,
+      -0.15680204123477892,
+      -0.7793317820920822,
+      -0.9792870854991805,
+      -0.534595240099008
+    ],
+    "rotation_axis_x_over_c": 0.25,
+    "max_adjacent_twist_delta_deg": 2.4450261467039476
+  }
+]
+
+

@@ -1,0 +1,490 @@
+[
+  {
+    "case_id": "ctw_seed_001",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_adjacent_twist_delta_deg": 0.0,
+    "max_abs_twist_deg": 0.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_002",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      1.0,
+      1.5,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "max_adjacent_twist_delta_deg": 1.0,
+    "max_abs_twist_deg": 2.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_003",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      1.5,
+      2.0,
+      2.5,
+      2.5,
+      2.0
+    ],
+    "max_adjacent_twist_delta_deg": 1.5,
+    "max_abs_twist_deg": 2.5,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_004",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.0,
+      2.5,
+      3.0,
+      2.5,
+      2.0
+    ],
+    "max_adjacent_twist_delta_deg": 2.0,
+    "max_abs_twist_deg": 3.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_005",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.5,
+      3.0,
+      3.0,
+      2.5,
+      1.5
+    ],
+    "max_adjacent_twist_delta_deg": 2.5,
+    "max_abs_twist_deg": 3.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_006",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      1.0,
+      2.0,
+      3.0,
+      3.5,
+      3.5
+    ],
+    "max_adjacent_twist_delta_deg": 1.0,
+    "max_abs_twist_deg": 3.5,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_007",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.5,
+      1.5,
+      2.5,
+      3.5,
+      4.0
+    ],
+    "max_adjacent_twist_delta_deg": 1.0,
+    "max_abs_twist_deg": 4.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_008",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.0,
+      3.0,
+      3.5,
+      2.5,
+      1.0
+    ],
+    "max_adjacent_twist_delta_deg": 2.0,
+    "max_abs_twist_deg": 3.5,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_009",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      -0.5,
+      0.5,
+      1.5,
+      2.5,
+      3.0
+    ],
+    "max_adjacent_twist_delta_deg": 1.0,
+    "max_abs_twist_deg": 3.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_010",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "max_adjacent_twist_delta_deg": 0.5,
+    "max_abs_twist_deg": 0.5,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_011",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.0,
+      1.0,
+      2.0,
+      1.0,
+      0.0
+    ],
+    "max_adjacent_twist_delta_deg": 1.0,
+    "max_abs_twist_deg": 2.0,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_012",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      1.5,
+      2.5,
+      2.0,
+      1.0,
+      0.0
+    ],
+    "max_adjacent_twist_delta_deg": 1.5,
+    "max_abs_twist_deg": 2.5,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_013",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.9503135246004506,
+      0.13636244757633675,
+      1.203545150690526,
+      1.363347500977219,
+      1.3785248601654279
+    ],
+    "max_adjacent_twist_delta_deg": 1.0671827031141892,
+    "max_abs_twist_deg": 1.3785248601654279,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_014",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.5794618668382583,
+      0.012373756399136404,
+      2.3986016891165693,
+      1.0785229464354567,
+      2.3619132101567772
+    ],
+    "max_adjacent_twist_delta_deg": 2.386227932717433,
+    "max_abs_twist_deg": 2.3986016891165693,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_015",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.06288098573736933,
+      1.6932943537732408,
+      -0.2816831004869449,
+      0.11379622725029392,
+      -0.9540307094255709
+    ],
+    "max_adjacent_twist_delta_deg": 1.9749774542601857,
+    "max_abs_twist_deg": 1.6932943537732408,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_016",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      0.21538816015721585,
+      0.4999880837637485,
+      -0.5699726735350388,
+      0.39266944112242896,
+      1.3638229557836703
+    ],
+    "max_adjacent_twist_delta_deg": 1.0699607572987873,
+    "max_abs_twist_deg": 1.3638229557836703,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_017",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      2.336110212647801,
+      2.4050774761120124,
+      1.6566387105638878,
+      -0.28520236391352727,
+      0.8707646294532865
+    ],
+    "max_adjacent_twist_delta_deg": 2.336110212647801,
+    "max_abs_twist_deg": 2.4050774761120124,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  },
+  {
+    "case_id": "ctw_seed_018",
+    "iteration": 0,
+    "eta_start": 0.6,
+    "eta_end": 1.0,
+    "rotation_axis_x_over_c": 0.25,
+    "shape_type": "distributed_section_twist",
+    "control_etas": [
+      0.68,
+      0.76,
+      0.84,
+      0.92,
+      1.0
+    ],
+    "control_twist_deg": [
+      -0.866567278303216,
+      -0.9171542368679316,
+      1.3971132464043174,
+      1.2498399888130693,
+      1.950982501076333
+    ],
+    "max_adjacent_twist_delta_deg": 2.314267483272249,
+    "max_abs_twist_deg": 1.950982501076333,
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Corrected-airfoil distributed-twist optimization seed."
+  }
+]
+
+

@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "two_s001_baseline",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25,
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "control_twist_deg": [0.0, 0.0, 0.0, 0.0, 0.0],
+    "notes": "Twist optimization zero-increment baseline seed"
+  },
+  {
+    "case_id": "two_s002_uniform_washin",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25,
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "control_twist_deg": [0.0, 2.0, 2.0, 2.0, 0.0],
+    "notes": "Twist optimization uniform wash-in seed with zero boundary command"
+  },
+  {
+    "case_id": "two_s003_uniform_washout",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25,
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "control_twist_deg": [0.0, -1.0, -1.0, -1.0, 0.0],
+    "notes": "Twist optimization low wash-out seed"
+  },
+  {
+    "case_id": "two_s004_midspan_peak",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25,
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "control_twist_deg": [0.0, 1.5, 3.0, 1.5, 0.0],
+    "notes": "Twist optimization midspan wash-in peak seed"
+  },
+  {
+    "case_id": "two_s005_outboard_peak",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25,
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "control_twist_deg": [0.0, 1.0, 2.0, 3.0, 0.5],
+    "notes": "Twist optimization outboard-biased wash-in seed"
+  },
+  {
+    "case_id": "two_s006_inboard_peak",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "rotation_axis_x_over_c": 0.25,
+    "control_etas": [0.6, 0.6875, 0.775, 0.8625, 0.95],
+    "control_twist_deg": [0.0, 3.0, 2.0, 1.0, 0.0],
+    "notes": "Twist optimization inboard-biased wash-in seed"
+  }
+]
+
+

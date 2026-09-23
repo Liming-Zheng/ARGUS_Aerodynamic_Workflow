@@ -1,0 +1,59 @@
+[
+  {
+    "case_id": "case_uniform_down",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.5,
+    "A_max_over_c": 0.02,
+    "shape_type": "uniform",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Representative uniform trailing-edge-down case"
+  },
+  {
+    "case_id": "case_tip_increasing_down",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.5,
+    "A_max_over_c": 0.02,
+    "shape_type": "tip_increasing",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Representative tip-increasing trailing-edge-down case"
+  },
+  {
+    "case_id": "case_tip_decreasing_down",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.5,
+    "A_max_over_c": 0.02,
+    "shape_type": "tip_decreasing",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Representative tip-decreasing trailing-edge-down case"
+  },
+  {
+    "case_id": "case_bell_down",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.5,
+    "A_max_over_c": 0.02,
+    "shape_type": "bell",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Representative bell-shaped trailing-edge-down case"
+  },
+  {
+    "case_id": "case_bell_up",
+    "eta_start": 0.6,
+    "eta_end": 0.95,
+    "x_h_over_c": 0.5,
+    "A_max_over_c": -0.02,
+    "shape_type": "bell",
+    "alpha_deg": 2.0,
+    "mach": 0.1,
+    "notes": "Representative bell-shaped trailing-edge-up case"
+  }
+]
+
+
